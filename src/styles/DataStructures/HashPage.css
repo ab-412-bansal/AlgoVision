@@ -1,0 +1,112 @@
+/* src/styles/HashPage.css */
+
+.hash-container {
+  color: var(--text-color); /* Dynamic text color */
+  background-color: var(--content-bg); /* Dynamic background color */
+  padding: 20px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  /* text-align: center; */
+}
+
+.hash-title {
+  font-size: 2rem;
+  color: var(--content-text-color); /* Color from theme for title */
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.hash-content {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  /* padding-bottom: 50px; */
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid var(--content-text-color); /* Border color from theme */
+  background-color: var(--content-bg); /* Background color from theme */
+  color: var(--text-color); /* Text color from theme */
+}
+
+svg {
+  margin-top: 20px;
+  background-color: var(--content-bg); /* Background color from theme */
+  border: 1px solid var(--button-border-color); /* Border color from theme */
+}
+
+.bucket-group {
+  transition: transform 0.3s ease-in-out;
+}
+
+rect {
+  transition: fill 0.5s ease;
+  fill: var(--accent-color); /* Default accent color */
+}
+
+.bucket-text {
+  transition: fill 0.5s ease;
+  fill: var(--text-color); /* Text color for bucket text */
+}
+
+.hash-container {
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  /* margin: 20px auto; */
+}
+
+.hash-title {
+  text-align: center;
+  /* font-size: 28px; */
+  /* color: #333; */
+  margin-bottom: 10px;
+}
+
+.hash-content {
+  /* text-align: center; */
+  margin-bottom: 20px;
+  /* color: #555; */
+}
+
+.hash-controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hash-controls input {
+  padding: 8px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+.hash-image {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+pre.code {
+  /* background-color: #f4f4f4; */
+  padding: 15px;
+  /* border-left: 3px solid #007acc; */
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  border-radius: 5px;
+  margin: 15px 0;
+  white-space: pre-wrap;
+  /* color: #333; */
+}
+
+.hash-video {
+  display: block;
+  margin: 20px auto;
+}

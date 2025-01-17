@@ -1,0 +1,78 @@
+.signup-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form{
+    background-color: var(--card-bg-color, #ffffff); /* White by default or theme-based */
+  padding: 40px;
+  padding-right: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    color: var(--text);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-right: 40px;
+    border: 1px solid var(--input-border-color, #ddd); /* Soft border */
+    border-radius: 5px;
+    font-size: 14px;
+    color:  #333; /* Input text color */
+    background-color: var(--input-bg-color, #f9f9f9);
+    transition: border 0.3s ease;
+  }
+
+  .input-group input:focus{
+    border-color: var(--input-focus-border-color, #6c63ff); /* Focus border */
+  outline: none;
+  }
+  
+  .signup-btn {
+    width: 100%;
+  padding: 12px;
+  background-color: var(--button-bg-color, #6c63ff); /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px;
+  }
+  
+  .signup-btn:hover {
+    background-color: var(--button-hover-color, #534ebf); /* Button hover color */
+  }
+  
+  .error-msg {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  

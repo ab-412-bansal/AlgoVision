@@ -1,0 +1,38 @@
+/* src/styles/ChatbotPage.css */
+
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: var(--content-bg); /* Dynamic background color */
+    color: var(--content-text-color); /* Dynamic text color */
+    padding-bottom: 100px;
+    text-align: center;
+    
+  }
+  
+  .chatbot-title {
+    font-size: 2em;
+    color: var(--content-text-color); /* Title color from theme */
+    margin-bottom: 10px;
+    /* margin-top: 20px; */
+  }
+  
+  iframe {
+    border: none; /* Remove default iframe border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a modern look */
+    border-radius: 12px; /* Rounded corners */
+    width: 100%;
+    max-width: 350px; /* Max width for larger screens */
+    height: 700px; /* Fixed height */
+  }
+  
+  @media (max-width: 400px) {
+    iframe {
+      width: 90%; /* Make iframe responsive on smaller screens */
+      height: 400px; /* Adjust height slightly for small screens */
+    }
+  }
+  

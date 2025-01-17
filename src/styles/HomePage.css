@@ -1,0 +1,385 @@
+/* Ensure the entire container respects the theme */
+.home-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 1000px;
+  /* background-color: #f9f9f9; Light background for better readability */
+  /* background-color: var(--background-color); Dynamic background */
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    overflow: hidden;
+    color: var(--text-color); /* Dynamic text color */
+    margin-top: 40px;
+    margin-bottom: 70px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color); /* For Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: inherit; /* Keeps the current theme text color */
+}
+
+.home-content h3, .home-content h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: inherit; /* Keeps the current theme text color */
+}
+
+.home-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.home-content p {
+  margin-bottom: 20px;
+}
+
+.home-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto; /* Center the image */
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some depth */
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--background-color); /* Dynamic background */
+    color: var(--text-color); /* Dynamic text color */
+    margin-top: 200px;
+}
+
+/* Navbar styles */
+.top-navbar {
+    background-color: var(--navbar-bg); /* Navbar background from theme */
+    color: var(--navbar-text-color); /* Navbar text color from theme */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.hamburger-btn {
+    background: none;
+    border: 1px solid var(--button-border-color); /* Dynamic button border color */
+    border-radius: 5px;
+    color: var(--button-text-color); /* Dynamic text color */
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--logo-color); /* Dynamic logo color */
+    margin-right: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.nav-links a {
+    color: var(--navbar-text-color); /* Dynamic link color */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 8px var(--hover-glow-color); /* Dynamic glow effect */
+}
+
+.nav-links a.active-link {
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--active-glow-color); /* Active link color */
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    background-color: var(--sidebar-bg); /* Sidebar background */
+    color: var(--sidebar-text-color); /* Sidebar text color */
+    width: 250px;
+    height: calc(100% - 60px);
+    position: fixed;
+    top: 60px;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--sidebar-divider-color); /* Dynamic divider color */
+}
+
+.sidebar ul li a {
+    color: var(--sidebar-link-color); /* Sidebar link color */
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.sidebar ul li a:hover {
+    text-shadow: 0 0 8px var(--sidebar-hover-glow-color); /* Hover glow effect */
+}
+
+.sidebar ul li a.active-link {
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--sidebar-active-glow-color); /* Active link glow */
+}
+
+.quiz-button a{
+  text-decoration: none;
+  font-size:large;
+    color: var(--sidebar-text-color); /* Sidebar text color */
+    
+  padding: 10px 10px;
+    border-bottom: 1px solid var(--sidebar-divider-color);
+    color: var(--sidebar-link-color); /* Sidebar link color */
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.quiz-button a:hover{
+  text-shadow: 0 0 8px var(--sidebar-hover-glow-color);
+}
+
+.quiz-button a.active-link{
+  font-weight: bold;
+    text-shadow: 0 0 8px var(--sidebar-active-glow-color);
+}
+/* Content Area */
+.content-area {
+    flex: 1;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    background-color: var(--content-bg); /* Dynamic content background */
+    color: var(--content-text-color); /* Dynamic content text color */
+    height: calc(100vh - 60px); /* Adjusts height to fit the viewport minus the navbar */
+    width: 70vw;
+}
+
+
+.sidebar.open ~ .content-area {
+    margin-left: 250px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg); /* Dynamic footer background */
+    color: var(--footer-text-color); /* Dynamic footer text color */
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Theme Switcher */
+.theme-switch-container {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Link glow effects */
+.nav-links a:hover, .sidebar ul li a:hover {
+    text-shadow: 0 0 8px var(--hover-glow-color); /* Consistent glow across both */
+}
+
+.nav-links a.active-link, .sidebar ul li a.active-link {
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--active-glow-color); /* Consistent active glow */
+}
+
+/* Styles for the search bar */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push search bar to the right of the nav links */
+    margin-right: 20px; /* Space between search bar and theme switch */
+  }
+  
+  .search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+  }
+  
+  .search-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 0 4px 4px 0;
+    color: var(--footer-bg);
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: var(--hover-glow-color);
+  }
+  
+  /* Ensure the entire container respects the theme */
+/* Other styles remain the same */
+
+/* Sidebar styles */
+.sidebar {
+  background-color: var(--sidebar-bg); /* Sidebar background */
+  color: var(--sidebar-text-color); /* Sidebar text color */
+  width: 250px;
+  height: calc(100% - 60px);
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  transition: left 0.3s ease;
+  z-index: 999;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--sidebar-divider-color); /* Dynamic divider color */
+}
+
+.sidebar ul li a {
+  color: var(--sidebar-link-color); /* Sidebar link color */
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.sidebar ul li a:hover {
+  text-shadow: 0 0 8px var(--sidebar-hover-glow-color); /* Hover glow effect */
+}
+
+.sidebar ul li a.active-link {
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--sidebar-active-glow-color); /* Active link glow */
+}
+
+/* Logout button styles */
+.logout-btn {
+  margin:20px;
+  margin-bottom: 80px;
+  padding: 10px;
+  width:200px;
+  background-color: var(--button-bg); /* Dynamic background color */
+  color: var(--button-text-color); /* Dynamic text color */
+  border: 1px solid var(--button-border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  background-color: var(--button-hover-bg); /* Hover effect */
+}
+
+/* Other styles remain the same */
+

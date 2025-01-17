@@ -1,0 +1,88 @@
+/* src/styles/DataStructures/heapPage.css */
+
+.heap-container {
+  color: var(--text-color); /* Dynamic text color */
+  background-color: var(--content-bg); /* Dynamic background color */
+  padding: 20px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  /* align-items: center;  */
+}
+
+.heap-title {
+  font-size: 2em;
+  color: var(--content-text-color); /* Title color from theme */
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.heap-content {
+  margin-top: 20px;
+  font-size: calc(10px + 1vmin);
+  /* padding-bottom: 50px; */
+}
+
+.heap-input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.2em; /* Adjust font size for better visibility */
+  border: 1px solid var(--bcontent-text-color); /* Border color from theme */
+  border-radius: 8px;
+  background-color: var(--content-bg); /* Background color for input field */
+  width: 40%; /* Make the input field larger */
+  text-align: center; /* Center text inside the input field */
+}
+
+svg {
+  margin-top: 40px; /* Space between input and SVG */
+  width: 80%;
+  height: 400px; /* Set a fixed height for the animation box */
+  display: block; /* Ensures that the SVG takes full width */
+}
+
+.heap-container {
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+ 
+}
+
+.heap-title {
+  text-align: center;
+  font-size: 40px;
+  /* color: #333; */
+  margin-bottom: 10px;
+}
+
+.heap-content {
+  /* text-align: center; */
+  margin-bottom: 20px;
+  /* color: #555; */
+}
+
+.heap-image {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  height: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+}
+
+pre.code {
+  /* background-color: #f4f4f4; */
+  padding: 15px;
+  /* border-left: 3px solid #007acc; */
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  border-radius: 5px;
+  margin: 15px 0;
+  white-space: pre-wrap;
+  /* color: #333; */
+}

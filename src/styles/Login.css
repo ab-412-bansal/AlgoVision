@@ -1,0 +1,110 @@
+/* Login.css */
+.login-container {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color, #7ebcfa); /* Add theme support */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  background-color: var(--card-bg-color, #ffffff); /* White by default or theme-based */
+  padding: 40px;
+  padding-right: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-form:hover {
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.2); /* On hover, emphasize the shadow */
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--heading-color, #333); /* Heading color, customizable by theme */
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--label-color, #333); /* Label color */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  margin-right: 40px;
+  border: 1px solid var(--input-border-color, #ddd); /* Soft border */
+  border-radius: 5px;
+  font-size: 14px;
+  color:  #333; /* Input text color */
+  background-color: var(--input-bg-color, #f9f9f9);
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--input-focus-border-color, #6c63ff); /* Focus border */
+  outline: none;
+}
+
+.login-button {
+  width: 108%;
+  padding: 12px;
+  background-color: var(--button-bg-color, #6c63ff); /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: var(--button-hover-color, #534ebf); /* Button hover color */
+}
+
+.error-message {
+  color: var(--error-color, #ff4d4f); /* Error message color */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.signup-link a {
+  color: var(--link-color, #6c63ff); /* Link color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 30px 20px;
+  }
+
+  .login-button {
+    font-size: 14px;
+  }
+}

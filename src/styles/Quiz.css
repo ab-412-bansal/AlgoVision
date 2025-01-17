@@ -1,0 +1,136 @@
+/* Container for the quiz */
+.quiz-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--content-bg); /* Dynamic background */
+    color: var(--content-text-color); /* Dynamic text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+  }
+  
+  /* Quiz Title */
+  .quiz-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Dynamic text color */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Question styles */
+  .quiz-question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+  }
+  
+  /* Options container */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Individual option */
+  .quiz-option {
+    padding: 10px 15px;
+    background-color: var(--quiz-option); /* Dynamic button background */
+    color: var(--quiz-text); /* Dynamic text color */
+    border: 1px solid var(--button-border-color); /* Dynamic border color */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for options */
+  .quiz-option:hover {
+    background-color: var(--quiz-hover); /* Hover background */
+    color: var(--quiz-hover-color); /* Text color on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Active or selected option */
+  .quiz-option.active {
+    background-color: var(--quiz-select); /* Active background */
+    font-weight: bold;
+    border: 2px solid var(--hover-glow-color); /* 
+    Active border */
+    color:var(--quiz-select-text)
+  }
+  
+  /* Navigation buttons */
+  .quiz-nav-btn {
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--button-bg-color);
+    color: var(--submit-quiz-text);
+    border: 1px solid var(--button-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .quiz-nav-btn:hover {
+    background-color: var(--stack-bar-stroke-color);
+    color: var(--quiz-select-text);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Progress bar container */
+  .progress-bar-container {
+    margin: 20px 0;
+    background-color: var(--background-color); /* Theme-specific background */
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Progress bar fill */
+  .progress-bar-fill {
+    width: 0;
+    height: 100%;
+    background-color: var(--accent-color); /* Dynamic progress color */
+    transition: width 0.5s ease;
+  }
+  
+  /* Result area */
+  .quiz-result {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--text-color); /* Dynamic text color */
+  }
+  
+  /* Retry button */
+  .retry-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--button-bg-color);
+    color: var(--submit-quiz-text);
+    border: 1px solid var(--button-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .retry-btn:hover {
+    background-color: var(--stack-bar-stroke-color);
+    color: var(--quiz-select-text);
+  }
+  

@@ -1,0 +1,128 @@
+/* Body style with vibrant-to-dark gradient */
+body {
+    background: radial-gradient(circle at center, #4A0070, #210035, #120024);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #00FFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Circular overlay with larger, lighter, and glowing effect */
+.circular-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-overlay::before, .circular-overlay::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.3), 
+                0 0 150px rgba(255, 255, 255, 0.2);
+    animation: spin 30s linear infinite, pulse 5s ease-in-out infinite;
+}
+
+.circular-overlay::before {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(from 360deg, #300242, #66048d, #300242);
+    animation-duration: 5s;
+    filter: opacity(0.8);
+}
+
+.circular-overlay::after {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(from -360deg, #300242, #9c08d6, #300242);
+    animation-duration: 5s;
+    filter: opacity(0.9);
+}
+
+/* Electric spark-like flickering text styles */
+.text-content {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    animation: flicker 2s infinite;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+    color: #00FFFF;
+    text-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF;
+}
+
+.text-content h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+}
+
+/* Keyframes for rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Keyframes for electric spark-like flickering effect */
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow: 
+            0 0 4px #00FFFF, 
+            0 0 10px #00FFFF, 
+            0 0 20px #00FFFF, 
+            0 0 40px #00FFFF, 
+            0 0 80px #00FFFF;
+    }
+    20%, 24%, 55% {
+        opacity: 0.5;
+        text-shadow: none;
+    }
+}
+
+/* Keyframes for circle pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    15% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    65% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    90% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+}

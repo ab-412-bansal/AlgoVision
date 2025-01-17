@@ -1,0 +1,73 @@
+:root {
+  /* Light theme */
+  --background-color:#120024;
+  --container-background-color:#8eddf3;
+  --text-color:#2c2f33;
+  --link-line-color: #69b3a2;
+  --text-color:#2c2f33;
+  --navbar-bg: #a688c2;
+  --navbar-text-color: #fdecfd;
+  --sidebar-bg: #a688c2;
+  --sidebar-text-color: #fdecfd;
+  --footer-bg: #a688c2;
+  --footer-text-color: #fdecfd;
+  --content-bg: #fdecfd;
+  --content-text-color: #2c2f33;
+  --hover-glow-color: #2c2f33;
+  --active-glow-color: #dff0f5;
+  --button-border-color: #fdecfd;
+  --logo-color: #fdecfd;
+  --button-text-color:#fdecfd;
+  --logo-link:#2c2f33;
+  --accent-color:grey;
+  --stack-bar-color: steelblue;
+  --stack-bar-stroke-color: black;
+  --stack-text-color: white;
+  --stack-top-label-color: red;
+  --input-background: white;
+  --input-text-color: black;
+  --button-bg-color:#2c2f33;
+  --quiz-option:#acdacf;
+  --quiz-text:#2c2f33;
+  --quiz-hover:grey;
+  --quiz-hover-color:#fdecfd;
+  --quiz-select:#2c2f33;
+  --quiz-select-text:#fdecfd;
+  --submit-quiz-text:#fdecfd;
+  /* Define other necessary colors here */
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --navbar-bg: #2c2f33;
+  --text-color:#e1f1f8;
+  --link-line-color: #8b8b8b;
+  --navbar-text-color: #61dafb;
+  --sidebar-bg: #23272a;
+  --sidebar-text-color: #61dafb;
+  --footer-bg: #23272a;
+  --footer-text-color: #61dafb;
+  --content-bg: #2e003e;
+  --content-text-color: white;
+  --hover-glow-color: #7289da;
+  --active-glow-color: #99aab5;
+  --button-border-color: #61dafb;
+  --logo-color: #61dafb;
+  --button-text-color:#61dafb;
+  --logo-link:#61dafb;
+  --accent-color:white;
+  --stack-bar-color: #333; /* Dark color for the stack bars */
+  --stack-bar-stroke-color: #444; /* Slightly lighter stroke color */
+  --stack-text-color: #e1e1e1; /* Light text color for contrast */
+  --stack-top-label-color: #ff0000; /* Bright color for the top label */
+  --input-background: #222; /* Dark background for input */
+  --input-text-color: #e1e1e1; 
+  --button-bg-color:#61dafb;
+  --quiz-option:#69b3a2;
+  --quiz-text:#2c2f33;
+  --quiz-hover-color:#fdecfd;
+  --quiz-select:#2c2f33;
+  --quiz-select-text:#fdecfd;
+  --submit-quiz-text:#2c2f33;
+}
+

@@ -1,0 +1,141 @@
+/* src/styles/GraphPage.css */
+
+.graph-container {
+  color: var(--text-color); /* Dynamic text color */
+  background-color: var(--content-bg); /* Dynamic background color */
+  padding: 20px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  /* text-align: center; */
+
+}
+
+.graph-title {
+  font-size: 24px;
+  color: var(--content-text-color); /* Color from theme for title */
+  margin-top: 30px;
+}
+
+.graph-content {
+  margin: 10px 0;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.graph-input {
+  margin: 10px 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--content-text-color); /* Border color from theme */
+  font-size: 16px;
+  width: 200px;
+  background-color: var(--content-bg); /* Background color from theme */
+  color: var(--text-color); /* Text color from theme */
+}
+
+.error-message {
+  color: red; /* Keep red for errors */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+svg {
+  background-color: var(--content-bg); /* Background color from theme */
+  border: 1px solid var(--button-border-color); /* Border color from theme */
+  margin: 20px auto;
+}
+
+circle {
+  transition: transform 0.2s ease-in-out;
+}
+
+circle:hover {
+  transform: scale(1.2);
+  fill: var(--active-glow-color); /* Hover color from theme */
+}
+
+line {
+  stroke: var(--accent-color); /* Stroke color from theme */
+  stroke-width: 2px;
+  transition: stroke-width 0.3s;
+}
+
+line:hover {
+  stroke-width: 4px;
+}
+
+.graph-container {
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  /* margin: 20px auto; */
+}
+
+.graph-title {
+  text-align: center;
+  font-size: 40px;
+  /* color: #333; */
+  margin-bottom: 10px;
+}
+
+.graph-content {
+  /* text-align: center; */
+  margin-bottom: 20px;
+  /* color: #555; */
+}
+
+.graph-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.graph-controls input {
+  margin-right: 10px;
+  padding: 8px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+.graph-controls button {
+  padding: 8px 12px;
+  border: none;
+  /* background-color: #007acc; */
+  /* color: white; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.graph-controls button:hover {
+  background-color: #005f8c;
+}
+
+.graph-message {
+  text-align: center;
+  color: #d9534f;
+  margin-top: 15px;
+}
+
+.graph-image {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+pre.code {
+  /* background-color: #f4f4f4; */
+  padding: 15px;
+  /* border-left: 3px solid #007acc; */
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  border-radius: 5px;
+  margin: 15px 0;
+  white-space: pre-wrap;
+  /* color: #333; */
+}
